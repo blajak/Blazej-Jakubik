@@ -14,6 +14,13 @@ int main()
   {
     int x;
     cin >> x;
+
+    if(x <= 0)
+      {
+        cout << "Podana liczba nie jest dodatnia" << endl;
+        return 0;
+      }
+
     cout << x << " ";
     if(czy_pierwsza(x))
       cout << "to jest liczba pierwsza";
@@ -21,5 +28,6 @@ int main()
       cout << "to nie jest liczba pierwsza";
       
     cout << endl;
+
     return 0;
   }
